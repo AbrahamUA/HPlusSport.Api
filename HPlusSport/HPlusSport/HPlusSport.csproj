@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.3.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controller\" />
+    <None Remove="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\HPlusSport.csproj.nuget.g.props" />
+    <None Include="obj\project.assets.json" />
+    <None Include="obj\HPlusSport.csproj.nuget.dgspec.json" />
+    <None Include="obj\HPlusSport.csproj.nuget.g.targets" />
+    <None Include="obj\Debug\net6.0\HPlusSport.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net6.0\HPlusSport.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net6.0\HPlusSport.AssemblyInfoInputs.cache" />
+    <None Include="HPlusSport.API\HPlusSport.API.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\net6.0\HPlusSport.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net6.0\HPlusSport.GlobalUsings.g.cs" />
+  </ItemGroup>
+</Project>
